@@ -27,7 +27,7 @@ const MoviePage: NextPage = () => {
     useEffect(() => {
         if (imdbID) {
             axios
-                .get(`http://www.omdbapi.com/?i=${imdbID}&apikey=d1dc0d66`)
+                .get(`https://www.omdbapi.com/?i=${imdbID}&apikey=d1dc0d66`)
                 .then((response) => {
                     setMovieInfo(response.data);
                     const infoForTableTemporary: any = {};
