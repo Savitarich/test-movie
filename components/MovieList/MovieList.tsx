@@ -34,7 +34,7 @@ const MovieList: NextPage = () => {
     useEffect(() => {
         axios
             .get(
-                `http://www.omdbapi.com/?apikey=d1dc0d66&s=${searchValue}&type=movie&r=json&page=${currentPage}`
+                `https://www.omdbapi.com/?apikey=d1dc0d66&s=${searchValue}&type=movie&r=json&page=${currentPage}`
             )
             .then((response) => {
                 setMovies(response.data.Search);
